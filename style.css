@@ -1,0 +1,200 @@
+/* 全体の基本設定 */
+body {
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: #d7f1fe;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* ヘッダー */
+header {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #ffe1e1;
+  border-bottom: 2px dotted #f6b8c8;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* ナビゲーション */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ff6699;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* 飾り画像セクション */
+#headerkazari img,
+#footerkazari img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+/* プロフィールセクション */
+#profile {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#profile img {
+  max-width: 220px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #ff6688;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 16px; 
+  padding: 10px;
+}
+
+.scroll-container img {
+  max-height: 200px; 
+  border-radius: 8px;
+}
+
+
+/* TOPボタン */
+#button {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.back-to-top {
+  background-color: #ff91af;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+
+
+.back-to-top:hover {
+  background-color: #ffb3c6;
+}
+
+footer {
+  padding: 0 auto 0;
+  background-color: #ffe1e1;
+  height: 50px;
+  text-align: left;
+}
+
+/* 作品 */
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 280px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-content h3 {
+  margin: 0 0 8px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.card-content p {
+  font-size: 0.95em;
+  color: #666;
+}
+
+/* 問い合わせ */
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #444;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-size: 1em;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #0078D7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
